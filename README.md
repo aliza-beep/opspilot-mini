@@ -1,40 +1,65 @@
-# OpsPilot Mini
+# OpsPilot Mini — Business Operations Dashboard
 
-A polished, browser-local business operations dashboard built with React, TypeScript, Vite, Tailwind CSS, Recharts, and Lucide React.
+[View the live demo](https://opspilot-mini.pages.dev)
 
-OpsPilot Mini brings lead tracking, task management, pipeline reporting, and practical follow-up rules into one responsive workspace. All included contacts and companies are fictional demo data. The app has no backend, authentication, paid APIs, or secrets.
+## Overview
 
-## Features
+OpsPilot Mini is a responsive business operations dashboard that brings lead management, task tracking, pipeline visibility, and follow-up planning into one focused workspace.
 
-- Dashboard KPIs for total leads, conversion rate, open pipeline value, and overdue tasks
-- Searchable and filterable lead CRM with create, edit, and delete workflows
-- Task manager with priorities, due dates, completion toggles, and filters
-- Revenue trend and lead pipeline charts powered by Recharts
-- Rule-based follow-up suggestions based on lead stage and last-contact date
-- CSV lead export
-- Browser `localStorage` persistence and one-click demo data reset
-- Responsive sidebar navigation, accessible forms, confirmations, and empty states
+Small teams often manage sales activity and operational follow-ups across disconnected spreadsheets and task lists. OpsPilot Mini addresses that problem with a clear, browser-based view of the information and actions needed to keep opportunities moving.
 
-## Getting started
+## Key Features
 
-Requirements: Node.js 20 or newer and npm.
+- **KPI dashboard:** Monitor total leads, conversion rate, open pipeline value, and overdue tasks at a glance.
+- **Lead CRM:** Search, filter, create, edit, and delete leads while tracking status, value, source, and last-contact date.
+- **Task manager:** Create and manage tasks with priorities, due dates, completion controls, and status filters.
+- **Business charts:** Explore revenue trends and lead pipeline stages through responsive Recharts visualizations.
+- **CSV export:** Download the current lead list as a CSV file for reporting or further analysis.
+- **Rule-based follow-up recommendations:** Surface practical next steps based on lead stage and time since the last contact. These are deterministic business rules, not AI predictions.
+- **Browser-local persistence:** Preserve lead and task changes with `localStorage` and restore the original fictional dataset with the reset control.
+
+## Technology Stack
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Recharts
+- Lucide React
+
+## Local Installation
+
+### Requirements
+
+- Node.js 20 or newer
+- npm
+
+### Setup and Development
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open the local URL printed by Vite, normally [http://localhost:5173](http://localhost:5173).
+Open the local URL printed by Vite, typically [http://localhost:5173](http://localhost:5173).
 
-## Production build
+### Production Build
 
 ```bash
 npm run build
-npm run preview
 ```
 
 The optimized production files are generated in `dist/`.
 
-## Data and privacy
+## Data and Architecture
 
-Lead and task changes are stored only in the current browser using `localStorage`. Use **Reset demo data** in the sidebar to restore the original fictional records. Clearing site data in the browser will also remove local changes.
+All contacts, companies, tasks, and business figures included with the project are fictional demo data. User changes are stored only in the current browser through `localStorage`; clearing browser site data will remove those changes.
+
+OpsPilot Mini is a frontend-only portfolio project. It has no backend, database, user accounts, authentication, payment processing, paid APIs, or application secrets.
+
+## Future Improvements
+
+- User accounts and secure authentication for personalized workspaces
+- A persistent database for synchronized, multi-device access
+- Integrations with email, calendars, and external CRM platforms
+- Team collaboration, ownership, and activity history
